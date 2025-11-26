@@ -101,7 +101,7 @@ st.markdown("""
 # ------------------------------------
 # LOAD MODEL
 # ------------------------------------
-MODEL_PATH = "traffic_duration_model.keras"
+MODEL_PATH = "/home/heru/lungten/traffic_duration_model.h5"
 
 try:
     model = tf.keras.models.load_model(MODEL_PATH, compile=False)
