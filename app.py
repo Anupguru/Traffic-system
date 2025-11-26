@@ -104,7 +104,7 @@ st.markdown("""
 MODEL_PATH = "/home/heru/lungten/traffic_duration_model.h5"
 
 try:
-    model = tf.keras.models.load_model(MODEL_PATH, compile=False)
+    model = tf.h5.models.load_model(MODEL_PATH, compile=False)
     st.success("✅ Model loaded successfully!")
 except Exception as e:
     st.error(f"❌ Failed to load model: {e}")
